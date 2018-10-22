@@ -1,18 +1,401 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Уроки по веб-верстке</title>
-</head>
+	<head>
+	
+		<meta charset="UTF-8">
+		<meta name="keywords" content="уроки разработки">
+		<meta name="description" content="">
 
-<body>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-	<h1>Привет, меня зовут Александр!</h1>
-	<p>Я учусь верстке</p>
+		<title>Уроки по веб-верстке</title>
 
-</body>
+		<link rel="stylesheet" href="assets/css/style.css">
+		<link rel="shortcut icon" href="">
+		<link rel="canonical" href="">
+
+	</head>
+
+	<body>
+
+		<header class="header">
+
+			<section class="hsettings header__settings">
+
+				<section class="header__choice">
+					<form action="">
+
+						<label for="Language">
+							Language
+						</label>
+						<select name="Language" id="Language">
+							<option value="">English</option>
+							<option value="">Russian</option>
+						</select>
+
+						<label for="Currency">
+							Currency
+						</label>
+						<select name="Currency" id="Currency">
+							<option value="">USD</option>
+							<option value="">RUR</option>
+						</select>
+
+					</form>
+				</section>
+
+				<nav class="hsettings__menu">
+					<ul>
+						<li><a href="/account.html">Account</a></li>
+						<li><a href="/wishlist.html">Wishlist</a></li>
+						<li><a href="/checkout.html">Checkout</a></li>
+						<li><a href="/log_in.html">Log In</a></li>
+						<li><a href="/sign_up.html">Sign Up</a></li>
+					</ul>
+				</nav>
+				
+			</section>
+
+			<section class="hmain header__main">
+
+				<section class="header__logo">
+					<img class="header__logo_img" src="/assets/img/header_logo.jpg" alt="Логотип">
+				</section>
+
+				<nav class="hmain__menu">
+					<ul>
+						<li><a href="/index.html">HOME</a></li>
+						<li><a href="/women.html">WOMEN</a></li>
+						<li><a href="/men.html">MEN</a></li>
+						<li><a href="/other.html">OTHER</a></li>
+						<li><a href="/purchase.html">PURCHASE</a></li>
+					</ul>
+				</nav>
+
+				<section class="cartbox header__cartbox">
+					
+					<section class="cartbox__search">
+						<form action="">
+							<input type="search" name="text"> 						<!-- Поисковик по сайту? -->
+						</form>
+					</section>
+
+					<section class="cartbox__buttons">
+
+						<button class="button button--jhgjhg button--green button--mini">    <!-- Непонятная кнопка -->
+							<img src="/assets/img/button-jhgjhg.jpg" alt="Непонятная кнопка">
+						</button>
+
+						<button class="button button--cart button--green button--mini">
+							<img src="/assets/img/button-cart.jpg" alt="Корзина">
+						</button>
+
+					</section>
+
+					<section class="cartbox__links">
+						<a href="/cart.html">CART (0)</a>		<!-- А что со счетчиком товаров? -->
+					</section>
+
+				</section>
+
+			</section>
+
+			<section class="hslider header__slider">
+
+				<section class="hslider__background">
+					<img src="/assets/img/hslider_background.jpg" alt="Фоновое изображение">
+				</section>
+
+				<section class="hslider__ad">
+				
+					<section class="ad ad--rayBan">
+		
+						<p>
+							ALUMINIUM CLUB<br />
+							<b>EXPERIENCE RAY-BAN</b>
+						</p>
+						
+					</section>	
+							
+					<section class="ad ad--armany hidden">        <!-- Должно же еще что-то быть -->       
+						
+						<p>
+							
+						</p>
+						
+					</section>
+
+				</section>
+
+				<section class="hslider__buttons">
+
+					<button class="button button--toTheLeft button--gray button--big">
+						<img src="/assets/img/button-toTheLeft.jpg" alt="Влево">
+					</button>
+
+					<button class="button button--toTheRight button--gray button--big rotate">
+						<img src="/assets/img/button-toTheLeft.jpg" alt="Вправо">
+					</button>
+
+				</section>
+
+			</section>
+
+		</header>
+
+		<!-- <main class="main">
+			<section class="catalog">
+				<h2>
+					Featured Products
+				</h2>
+				<section class="catalog_items">
+					<article class="catalog_item">
+						<div class="catalog_item-label catalog_item-label__new">
+							New
+						</div>
+						<div class="catalog_item-description">
+							<img src="" alt="">
+							<p></p>
+						</div>
+						<button class="catalog_item-button">
+							Положить в корзину
+						</button>
+					</article>
+
+					<article class="catalog_item">
+						<div class="catalog_item-label catalog_item-label__sale">
+							Sale
+						</div>
+						<div class="catalog_item-description">
+							<img src="" alt="">
+							<p></p>
+							</div>
+						<button class="catalog_item-button">
+							Положить в корзину
+						</button>
+					</article>
+
+
+				</section>
+				<h2>
+					Staff Pick
+				</h2>
+
+
+
+			</section>
+			<section class="sidebar">
+				<section class="sidebar_banner">
+
+				</section>
+
+				<section class="sidebar_subscribe">
+					<form action="/subscribe.php">
+						<input type="text" name="email" />
+						<input type="submit" value="Subscribe">
+					</form>
+				</section>
+
+			</section>
+		</main> -->
+
+		<footer class="footer">
+
+			<section class="footer__delivery">
+
+				<section class="footer__shipping">
+
+					<a href="/shipping_terms.html">										<!-- 	Имеет ли шансы жить такая конструкция? -->
+						<div class="button button--shipping button--blue button--big">
+							<img src="/assets/img/shipping.jpg" alt="Доставка">
+						</div>
+						FREE SHIPPING ON ORDERS OVER 100					<!-- 	Как вставлять знаки? доллара, в частности -->
+					</a>
+
+				</section>
+
+				<section class="footer__callUs">
+
+					<a href="tel:+140988880099">
+						<div class="button button-callUs button-blue button-big">
+							<img src="/assets/img/callUs.jpg" alt="Звонок">
+						</div>	
+						CALL US! TOLL FREE- 409-8888-0099
+					</a>
+
+				</section>
+
+			</section>
+
+			<section class="fref footer__reference">
+
+				<section class="facebook fref__facebook">				<!-- А как осуществить привязку к соц сетям? -->
+
+					<div class="fref__header">
+						<h3>FACEBOOK</h3>
+					</div>
+
+					<div class="facebook__members">	
+						<p>20000 Members</p>
+					</div>
+
+					<button class="facebook__like">
+						<img src="/assets/img/facebook-like.jpg" alt="Поставить лайк">
+					</button>
+
+					<section class="facebook__photos">
+						<div><img src="/assets/img/photo1.jpg" alt="Фото"></div>
+						<div><img src="/assets/img/photo2.jpg" alt="Фото"></div>
+						<div><img src="/assets/img/photo3.jpg" alt="Фото"></div>
+						<div><img src="/assets/img/photo4.jpg" alt="Фото"></div>
+						<div><img src="/assets/img/photo5.jpg" alt="Фото"></div>
+						<div><img src="/assets/img/photo6.jpg" alt="Фото"></div>
+						<div><img src="/assets/img/photo7.jpg" alt="Фото"></div>
+						<div><img src="/assets/img/photo8.jpg" alt="Фото"></div>
+					</section>
+
+					<div class="facebook__plugin">
+						<a href="https://www.facebook.com">Facebook social plugin</a>
+					</div>
+
+				</section>
+
+				<section class="twitter fref__fromTwitter">
+					
+					<div class="fref__header">
+						<h3>FROM TWITTER</h3>
+					</div>
+	
+					<section class="twitter__content">
+
+						<a href="https://twitter.com">
+							<div class="button button--twitter buttom--blue button--medium">
+								<img src="/assets/img/twitter-logo.jpg" alt="Твиттер">
+							</div>
+						</a>
+
+						<div class="twitter__description">
+							<p>
+								Lorem Ipsum is simply 
+								dummy text of the printing 
+								and <span class="light-blue">typesetting industry.</span> 		<!-- Или это ссылки? -->
+								<span class="light-blue">Lorem Ipsum</span> has been the
+							</p>
+						</div>
+
+					</section>
+
+					<section class="twitter__content">
+
+						<a href="https://twitter.com">
+							<div class="button button--twitter buttom--blue button--medium">
+								<img src="/assets/img/twitter-logo.jpg" alt="Твиттер">
+							</div>
+						</a>
+
+						<div class="twitter__description">
+							<p>
+								Lorem Ipsum is simply 
+								dummy text of the printing 
+								and <span class="light-blue">typesetting industry.</span> 		<!-- Или это ссылки? -->
+								<span class="light-blue">Lorem Ipsum</span> has been the
+							</p>
+						</div>
+	
+					</section>
+
+				</section>
+
+				<section class="information fref__information">
+		
+					<div class="fref__header">
+						<h3>INFORMATION</h3>
+					</div>
+
+					<ul class="information__list">
+						<li>Sed ultrices purus non.</li>
+						<li>sodales sodales.</li>
+						<li>Curabitur pretium dui vitae.</li>
+						<li>Donec gravida mi in nisl</li>
+						<li>faucibus leo condimentum.</li>
+						<li>Donec et lorem suscipit.</li>
+					</ul>
+
+				</section>
+
+				<section class="contact fref__contactUs">
+
+					<div class="fref__header">
+						<h3>CONTACT US</h3>
+					</div>
+
+					<section class="contact__adds">
+						<p>
+							Leo Store<br/>
+							Leopards media<br/>
+							KVM Rpad, 4590GH<br/>
+							<a href="tel:+148988880099">+1 489-8888-0099</a><br/>
+							<a href="mailto:mail@email.com">mail@email.com</a>
+						</p>
+					</section>
+
+					<section class="contact__buttons">
+
+						<a href="#">
+							<div class="button button--g buttom--blue button--mini">
+								<img src="/assets/img/g-logo.jpg" alt="">
+							</div>
+						</a>
+
+						<a href="#">
+							<div class="button button--in buttom--blue button--mini">
+								<img src="/assets/img/in-logo.jpg" alt="">
+							</div>
+						</a>
+
+						<a href="#">
+							<div class="button button--w buttom--blue button--mini">
+								<img src="/assets/img/w-logo.jpg" alt="">
+							</div>
+						</a>
+
+						<a href="#">
+							<div class="button button--f buttom--blue button--mini">
+								<img src="/assets/img/f-logo.jpg" alt="">
+							</div>
+						</a>
+
+					</section>
+
+				</section>
+
+			</section>
+
+			<section class="fcopyright footer__copyright">
+
+				<section class="fcopyright__author">
+					<p>
+						Copyright 2013 Css Author, All Rights Reserved.			<!-- Опять значок копирайта. Неужели его картинкой вставлять? -->	
+					</p>
+				</section>
+
+				<nav class="fcopyright__menu">
+					<ul>
+						<li><a href="/about_us.html">About Us</a></li>
+						<li><a href="/delivery.html">Delivery & Returns</a></li>
+						<li><a href="/conditions.html">Terms & Conditions</a></li>
+						<li><a href="/contacts.html">Contact Us</a></li>
+					</ul>
+				</nav>
+
+			</section>
+
+		</footer>
+
+	</body>
 
 </html>
+
+<!-- и как удалять табуляции сразу нескольких строк? (после копирования лишние появляются) -->
