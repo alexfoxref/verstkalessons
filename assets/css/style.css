@@ -1,0 +1,313 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.header {}
+
+    .header__settings {}
+
+        .header-settings {}
+
+            .header-settings__select-menu {}
+
+                .select-menu {}
+
+                    .select-menu__form {}
+
+                        .select-menu__select {}
+
+                            .select-menu__select_language {}
+
+                            .select-menu__select_currency {}
+
+            .header-settings__menu {}
+
+
+
+    .header__main {}
+
+        .header-main {}
+
+            .header-main__logo {}
+
+                .header-main__logo-img {}
+
+            .header-main__menu {}
+
+            .header-main__cartbox {}
+
+                .cartbox {}
+
+                    .cartbox__search {}
+
+                        .cartbox__form {}
+
+                        .cartbox__input {}
+
+                    .cartbox__buttons {}
+
+                        .button_icon_tag {}
+
+                            .button__tag-icon {}
+
+                        .button_icon_cart {}
+
+                            .button__cart-icon {}
+
+                    .cartbox__link {}
+
+
+
+    .header__slider {}
+
+        .header-slider {}
+
+            .header-slider__background {}
+
+                .header-slider__background-img {}
+
+            .header-slider__ad {}
+
+                .ad__text {}
+                
+                .ad_firm_RayBan {}
+
+                .ad_firm_Armany {}
+
+            .header-slider__buttons {}
+
+                .button_icon_toTheLeft {}
+
+                    .button__toTheLeft-icon {}
+
+                .button_icon_toTheRight {}
+
+
+
+.main {}
+
+    .main__catalog {}
+
+        .main-catalog {}
+
+            .main-catalog__header {}
+
+            .main-catalog__featuredProducts {}
+
+            .main-catalog__staffPick {}
+
+            .main-catalog__newProducts {}
+
+            .main-catalog__item {}
+
+                .catalog-item {}
+
+                    .catalog-item__lable {}
+
+                        .catalog-item__lable-text {}
+
+                        .catalog-item__lable_new {}
+
+                        .catalog-item__lable_sale {}
+
+                    .catalog-item__information {}
+
+                        .catalog-item__information-img {}
+
+                        .catalog-item__information-text {}
+
+                            .catalog-item__information-firstPrise {}
+
+                            .catalog-item__information-price {}
+
+                    .button_icon_basket {}
+
+                        .button__basket-icon {}
+
+    .main__sidebar {}
+
+        .main-sidebar {}
+
+            .main-sidebar__banner {}
+
+                .sidebar-banner {}
+
+                    .sidebar-banner__images {}
+
+                        .sidebar-banner__background {}
+
+                        .sidebar-banner__button {}
+
+                    .sidebar-banner__scroll {}
+
+                        .button_icon_scroll1 {}
+
+                        .button_icon_scroll2 {}
+
+                        .button_icon_scroll3 {}
+
+            .main-sidebar__subscribe {}
+
+                .sidebar-subscribe {}
+
+                    .sidebar-subscribe__header {}
+
+                    .sidebar-subscribe__text {}
+
+                    .sidebar-subscribe__form {}
+
+                        .sidebar-subscribe__input {}
+
+                        .sidebar-subscribe__button {}
+
+            ..main-sidebar__button {}
+
+                .main-sidebar__button_color_blue {}
+
+                .main-sidebar__button_color_green {}
+
+                .main-sidebar__button_size_small {}
+
+                .main-sidebar__button_size_big {}
+
+                
+
+.footer {}
+
+    .footer__delivery {}
+
+        .footer__shipping {}
+
+            .button_icon_shipping {}
+
+                .button__shipping-icon {}
+
+        .footer__callUs {}
+
+            .button_icon_callUs {}
+
+                .button__callUs-icon {}
+
+    .footer__reference {}
+
+        .footer-reference {}
+
+            .footer-reference__header {}
+
+            .footer-reference__facebook {}
+
+                .facebook {}
+
+                    .facebook__text {}
+
+                    .facebook__button {}
+
+                        .facebook__like-icon {}
+
+                    .facebook__photos {}
+
+                        .facebook__photoplace {}
+
+                            .facebook__photo1-icon {}
+
+            .footer-reference__fromTwitter {}
+
+                .twitter {}
+
+                    .twitter__content {}
+
+                        .button_icon_twitter {}
+
+                            .button__twitter-icon {}
+
+                        .twitter__text {}
+
+                            .light-blue {}
+
+            .footer-reference__information {}
+
+                .information {}
+
+                    .information-list {}
+
+                        .information-list__item {}
+
+            .footer-reference__contactUs {}
+
+                .contactUs {}
+
+                    .contactUs__text {}
+
+                    .contactUs__buttons {}
+
+                        .button_icon_google {}
+
+                            .button__google-icon {}
+
+                        .button_icon_linkedin {}
+
+                            .button__linkedin-icon {}
+
+                        .button_icon_rss {}
+
+                            .button_icon_rss {}
+
+                        .button_icon_facebook {}
+
+                            .button__facebook-icon {}
+
+    .footer__copyright {}
+
+        .footer-copyright {}
+
+            .footer-copyright__text {}
+
+            .footer-copyright__menu {}
+
+
+
+
+.menu {}
+                
+    .menu__item {}
+
+    .menu_type1 {}
+
+    .menu_type2 {}
+
+.link {}
+
+    .link_menu {}
+
+    .link_cart {}
+
+    .link_delivery {}
+
+    .link-facebook_plugin {}
+
+    .link_contactUs-telephone {}
+
+    .link_contactUs-email {}
+
+.button {}
+
+    .button_color_green {}
+
+    .button_color_blue {}
+
+    .button_color_gray {}
+
+    .button_size_micro {}
+
+    .button_size_mini {}
+
+    .button_size_medium {}
+
+    .button_size_big {}
+
+.hidden {}
+
+.rotate_180deg {}
