@@ -12,7 +12,10 @@
 
 		<title>Уроки по веб-верстке</title>
 
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:200, 400,700" rel="stylesheet">
+
 		<link rel="stylesheet" href="assets/css/style.css">
+
 		<link rel="shortcut icon" href="">
 		<link rel="canonical" href="">
 
@@ -24,55 +27,65 @@
 
 			<section class="header-settings header__settings">
 
-				<section class="select-menu header-settings__select-menu">
-					<form class="select-menu__form" action="">
+				<section class="header-settings__wrapper">
 
-						<label for="Language">
-							Language
-						</label>
-						<select class="select-menu__select select-menu__select_language" name="Language" id="Language">
-							<option value="">English</option>
-							<option value="">Russian</option>
-						</select>
+					<section class="select-menu header-settings__select-menu">
+						<form class="select-menu__form" action="">
+							
+							<label class="select-menu__label" for="Language">
+								Language:
+							</label>
+							<select class="select-menu__select" name="Language" id="Language">
+								<option value="">English</option>
+								<option value="">Russian</option>
+							</select>
 
-						<label for="Currency">
-							Currency
-						</label>
-						<select class="select-menu__select select-menu__select_currency" name="Currency" id="Currency">
-							<option value="">USD</option>
-							<option value="">RUR</option>
-						</select>
+						</form>
 
-					</form>
+						<form class="select-menu__form" action="">
+
+							<label class="select-menu__label" for="Currency">
+								Currency:
+							</label>
+							<select class="select-menu__select" name="Currency" id="Currency">
+								<option value="">USD</option>
+								<option value="">RUR</option>
+							</select>
+
+						</form>
+					</section>
+
+					<nav class="header-settings__menu">
+						<ul class="menu menu_type1">
+							<li class="menu__item"><a class="link link_menu" href="/account.html">Account</a></li>
+							<li class="menu__item"><a class="link link_menu" href="/wishlist.html">Wishlist</a></li>
+							<li class="menu__item"><a class="link link_menu" href="/checkout.html">Checkout</a></li>
+							<li class="menu__item"><a class="link link_menu" href="/log_in.html">Log In</a></li>
+							<li class="menu__item"><a class="link link_menu" href="/sign_up.html">Sign Up</a></li>
+						</ul>
+					</nav>
+
 				</section>
-
-				<nav class="header-settings__menu">
-					<ul class="menu menu_type1">
-						<li class="menu__item"><a class="link link_menu" href="/account.html">Account</a></li>
-						<li class="menu__item"><a class="link link_menu" href="/wishlist.html">Wishlist</a></li>
-						<li class="menu__item"><a class="link link_menu" href="/checkout.html">Checkout</a></li>
-						<li class="menu__item"><a class="link link_menu" href="/log_in.html">Log In</a></li>
-						<li class="menu__item"><a class="link link_menu" href="/sign_up.html">Sign Up</a></li>
-					</ul>
-				</nav>
 				
 			</section>
 
 			<section class="header-main header__main">
 
-				<section class="header-main__logo">
-					<img class="header-main__logo-img" src="/assets/img/header-main__logo.jpg" alt="Логотип">
-				</section>
+				<div class="header-main__wrapper">
 
-				<nav class="header-main__menu">
-					<ul class="menu menu_type2">
-						<li class="menu__item"><a class="link link_menu" href="/index.html">Home</a></li>
-						<li class="menu__item"><a class="link link_menu" href="/women.html">Women</a></li>
-						<li class="menu__item"><a class="link link_menu" href="/men.html">Men</a></li>
-						<li class="menu__item"><a class="link link_menu" href="/other.html">Other</a></li>
-						<li class="menu__item"><a class="link link_menu" href="/purchase.html">Purchase</a></li>
-					</ul>
-				</nav>
+					<p class="header-main__logo">LEO Shop</p>
+
+					<nav class="header-main__menu">
+						<ul class="menu menu_type2">
+							<li class="menu__item"><a class="link link_menu" href="/index.html">Home</a></li>
+							<li class="menu__item"><a class="link link_menu" href="/women.html">Women</a></li>
+							<li class="menu__item"><a class="link link_menu" href="/men.html">Men</a></li>
+							<li class="menu__item"><a class="link link_menu" href="/other.html">Other</a></li>
+							<li class="menu__item"><a class="link link_menu" href="/purchase.html">Purchase</a></li>
+						</ul>
+					</nav>
+
+				</div>
 
 				<section class="cartbox header-main__cartbox">
 					
@@ -81,7 +94,7 @@
 
 							<!-- Поисковик по сайту? -->
 
-							<input class="cartbox__input" type="search" name="text"> 							
+							<input class="cartbox__input" type="search" name="site-search"> 							
 						</form>
 					</section>
 
@@ -90,11 +103,11 @@
 						<!-- Непонятная кнопка -->
 
 						<button class="button button_icon_tag button_color_green button_size_mini">
-							<img class="button__tag-icon" src="/assets/img/icon_tag.jpg" alt="Бирка">
+							<img class="button__tag-icon" src="assets/img/icon_tag.png" alt="Бирка">
 						</button>
 
 						<button class="button button_icon_cart button_color_green button_size_mini">
-							<img class="button__cart-icon" src="/assets/img/icon-cart.jpg" alt="Корзина">
+							<img class="button__cart-icon" src="assets/img/icon-cart.png" alt="Корзина">
 						</button>
 
 					</section>
@@ -113,41 +126,81 @@
 
 			<section class="header-slider header__slider">
 
-				<section class="header-slider__background">
-					<img class="header-slider__background-img" src="/assets/img/header-slider__background.jpg" alt="Фоновое изображение">
-				</section>
+				<ul class="header-slider__list">
 
-				<section class="header-slider__ad">
-				
-					<section class="ad ad_firm_RayBan">
-		
-						<p class="ad__text">
-							Aluminium Club<br />
-							<b>Experience Ray-Ban</b>
-						</p>
-						
-					</section>	
+					<li class="header-slider__list-item">
 
-					<!-- Должно же еще что-то быть -->   
-					    				
-					<section class="ad ad_firm_Armany hidden">
-						
-						<p class="ad__text">
+						<section class="header-slider__background">
+							<img class="header-slider__background-img" src="assets/img/header-slider__background1.jpg" alt="Фоновое изображение" width="1400" height="475">
+						</section>
+
+						<section class="header-slider__ad header-slider__ad_firm_1">
+
+							<section class="ad">
+								<h2 class="ad__header">
+									Aluminium Club
+								</h2>
+								<h3 class="ad__subheader">
+									Experience Ray-Ban
+								</h3>
+							</section>
+									
+						</section>
+
+					</li>
+
+					<li class="header-slider__list-item">
+
+						<section class="header-slider__background">
+							<img class="header-slider__background-img" src="assets/img/header-slider__background2.jpg" alt="Фоновое изображение" width="1400" height="475">
+						</section>
+	
+						<section class="header-slider__ad header-slider__ad_firm_2">
+								
+							<section class="ad">
+								<h2 class="ad__header">
+									Aluminium Club
+								</h2>
+								<h3 class="ad__subheader">
+									Experience Ray-Ban
+								</h3>
+							</section>
 							
-						</p>
-						
-					</section>
+						</section>
+							
+					</li>
 
-				</section>
+					<li class="header-slider__list-item"> 
+
+						<section class="header-slider__background">
+							<img class="header-slider__background-img" src="assets/img/header-slider__background3.jpg" alt="Фоновое изображение" width="1400" height="475">
+						</section>
+
+						<section class="header-slider__ad header-slider__ad_firm_3">
+							
+							<section class="ad">
+								<h2 class="ad__header">
+									Aluminium Club
+								</h2>
+								<h3 class="ad__subheader">
+									Experience Ray-Ban
+								</h3>
+							</section>
+							
+						</section>
+						
+					</li>
+
+				</ul>
 
 				<section class="header-slider__buttons">
 
-					<button class="button button_icon_toTheLeft button_color_gray button_size_big">
-						<img class="button__toTheLeft-icon" src="/assets/img/icon-toTheLeft.jpg" alt="Влево">
+					<button class="button button_icon_toTheLeft button_color_white button_size_big">
+						<img class="button__toTheLeft-icon" src="assets/img/icon-toTheLeft.png" alt="Влево">
 					</button>
 
-					<button class="button button_icon_toTheRight button_color_gray button_size_big rotate_180deg">
-						<img class="button__toTheLeft-icon" src="/assets/img/icon-toTheLeft.jpg" alt="Вправо">
+					<button class="button button_icon_toTheRight button_color_white button_size_big rotate180deg">
+						<img class="button__toTheLeft-icon" src="assets/img/icon-toTheLeft.png" alt="Вправо">
 					</button>
 
 				</section>
@@ -179,7 +232,7 @@
 
 						<div class="catalog-item__information">
 							
-							<img class="catalog-item__information-img" src="/assets/img/catalog-item__information_1.jpg" alt="Изображение товара">
+							<img class="catalog-item__information-img" src="assets/img/catalog-item__information_1.jpg" alt="Изображение товара" width="217" height="229">
 							
 							<p class="catalog-item__information-text">
 								Lorem Ipsum is simply.<br />
@@ -189,7 +242,7 @@
 						</div>
 
 						<button class="button button_icon_basket button_color_green button_size_medium">
-							<img class="button__basket-icon" src="/assets/img/icon-basket.jpg" alt="Положить в корзину">
+							<img class="button__basket-icon" src="assets/img/icon-basket.png" alt="Положить в корзину">
 						</button>
 		
 					</article>
@@ -204,7 +257,7 @@
 	
 							<div class="catalog-item__information">
 								
-								<img class="catalog-item__information-img" src="/assets/img/catalog-item__information_2.jpg" alt="Изображение товара">
+								<img class="catalog-item__information-img" src="assets/img/catalog-item__information_1.jpg" alt="Изображение товара" width="217" height="229">
 								
 								<p class="catalog-item__information-text">
 									Nullam vestibulum.<br />
@@ -214,7 +267,7 @@
 							</div>
 	
 							<button class="button button_icon_basket button_color_green button_size_medium">
-								<img class="button__basket-icon" src="/assets/img/icon-basket.jpg" alt="Положить в корзину">
+								<img class="button__basket-icon" src="assets/img/icon-basket.png" alt="Положить в корзину">
 							</button>
 			
 					</article>
@@ -229,7 +282,7 @@
 		
 								<div class="catalog-item__information">
 									
-									<img class="catalog-item__information-img" src="/assets/img/catalog-item__information_3.jpg" alt="Изображение товара">
+									<img class="catalog-item__information-img" src="assets/img/catalog-item__information_1.jpg" alt="Изображение товара" width="217" height="229">
 									
 									<p class="catalog-item__information-text">
 										Donec et lorem suscipit.<br />
@@ -240,7 +293,7 @@
 								</div>
 		
 								<button class="button button_icon_basket button_color_green button_size_medium">
-									<img class="button__basket-icon" src="/assets/img/icon-basket.jpg" alt="Положить в корзину">
+									<img class="button__basket-icon" src="assets/img/icon-basket.png" alt="Положить в корзину">
 								</button>
 				
 					</article>
@@ -255,7 +308,7 @@
 	
 							<div class="catalog-item__information">
 								
-								<img class="catalog-item__information-img" src="/assets/img/catalog-item__information_4.jpg" alt="Изображение товара">
+								<img class="catalog-item__information-img" src="assets/img/catalog-item__information_1.jpg" alt="Изображение товара" width="217" height="229">
 								
 								<p class="catalog-item__information-text">
 									Curabitur pretium dui.<br />
@@ -265,7 +318,7 @@
 							</div>
 	
 							<button class="button button_icon_basket button_color_green button_size_medium">
-								<img class="button__basket-icon" src="/assets/img/icon-basket.jpg" alt="Положить в корзину">
+								<img class="button__basket-icon" src="assets/img/icon-basket.png" alt="Положить в корзину">
 							</button>
 			
 					</article>
@@ -280,7 +333,7 @@
 	
 							<div class="catalog-item__information">
 								
-								<img class="catalog-item__information-img" src="/assets/img/catalog-item__information_5.jpg" alt="Изображение товара">
+								<img class="catalog-item__information-img" src="assets/img/catalog-item__information_1.jpg" alt="Изображение товара" width="217" height="229">
 								
 								<p class="catalog-item__information-text">
 									Lorem Ipsum is simply<br />
@@ -290,7 +343,7 @@
 							</div>
 	
 							<button class="button button_icon_basket button_color_green button_size_medium">
-								<img class="button__basket-icon" src="/assets/img/icon-basket.jpg" alt="Положить в корзину">
+								<img class="button__basket-icon" src="assets/img/icon-basket.png" alt="Положить в корзину">
 							</button>
 			
 					</article>
@@ -305,7 +358,7 @@
 	
 							<div class="catalog-item__information">
 								
-								<img class="catalog-item__information-img" src="/assets/img/catalog-item__information_6.jpg" alt="Изображение товара">
+								<img class="catalog-item__information-img" src="assets/img/catalog-item__information_1.jpg" alt="Изображение товара" width="217" height="229">
 								
 								<p class="catalog-item__information-text">
 									Sed tempus tellus .<br />
@@ -315,7 +368,7 @@
 							</div>
 	
 							<button class="button button_icon_basket button_color_green button_size_medium">
-								<img class="button__basket-icon" src="/assets/img/icon-basket.jpg" alt="Положить в корзину">
+								<img class="button__basket-icon" src="assets/img/icon-basket.png" alt="Положить в корзину">
 							</button>
 			
 					</article>
@@ -330,7 +383,7 @@
 		
 								<div class="catalog-item__information">
 									
-									<img class="catalog-item__information-img" src="/assets/img/catalog-item__information_7.jpg" alt="Изображение товара">
+									<img class="catalog-item__information-img" src="assets/img/catalog-item__information_1.jpg" alt="Изображение товара" width="217" height="229">
 									
 									<p class="catalog-item__information-text">
 										Lorem Ipsum is simply<br />
@@ -340,8 +393,8 @@
 								</div>
 		
 								<button class="button button_icon_basket button_color_green button_size_medium">
-									<img class="button__basket-icon" src="/assets/img/icon-basket.jpg" alt="Положить в корзину">
-								</button>
+									<img class="button__basket-icon" src="assets/img/icon-basket.png" alt="Положить в корзину">
+									</button>
 				
 					</article>
 		
@@ -355,7 +408,7 @@
 	
 							<div class="catalog-item__information">
 								
-								<img class="catalog-item__information-img" src="/assets/img/catalog-item__information_8.jpg" alt="Изображение товара">
+								<img class="catalog-item__information-img" src="assets/img/catalog-item__information_1.jpg" alt="Изображение товара" width="217" height="229">
 								
 								<p class="catalog-item__information-text">
 									Etiam egestas velit.<br />
@@ -366,7 +419,7 @@
 							</div>
 	
 							<button class="button button_icon_basket button_color_green button_size_medium">
-								<img class="button__basket-icon" src="/assets/img/icon-basket.jpg" alt="Положить в корзину">
+								<img class="button__basket-icon" src="assets/img/icon-basket.png" alt="Положить в корзину">
 							</button>
 			
 					</article>
@@ -381,7 +434,7 @@
 	
 							<div class="catalog-item__information">
 								
-								<img class="catalog-item__information-img" src="/assets/img/catalog-item__information_9.jpg" alt="Изображение товара">
+								<img class="catalog-item__information-img" src="assets/img/catalog-item__information_1.jpg" alt="Изображение товара" width="217" height="229">
 								
 								<p class="catalog-item__information-text">
 									Mauris viverra magna.<br />
@@ -391,7 +444,7 @@
 							</div>
 	
 							<button class="button button_icon_basket button_color_green button_size_medium">
-								<img class="button__basket-icon" src="/assets/img/icon-basket.jpg" alt="Положить в корзину">
+								<img class="button__basket-icon" src="assets/img/icon-basket.png" alt="Положить в корзину">
 							</button>
 			
 					</article>
@@ -414,7 +467,7 @@
 		
 								<div class="catalog-item__information">
 									
-									<img class="catalog-item__information-img" src="/assets/img/catalog-item__information_10.jpg" alt="Изображение товара">
+									<img class="catalog-item__information-img" src="assets/img/catalog-item__information_1.jpg" alt="Изображение товара" width="217" height="229">
 									
 									<p class="catalog-item__information-text">
 										Lorem Ipsum is simply<br />
@@ -424,7 +477,7 @@
 								</div>
 		
 								<button class="button button_icon_basket button_color_green button_size_medium">
-									<img class="button__basket-icon" src="/assets/img/icon-basket.jpg" alt="Положить в корзину">
+									<img class="button__basket-icon" src="assets/img/icon-basket.png" alt="Положить в корзину">
 								</button>
 				
 					</article>
@@ -439,7 +492,7 @@
 	
 							<div class="catalog-item__information">
 								
-								<img class="catalog-item__information-img" src="/assets/img/catalog-item__information_11.jpg" alt="Изображение товара">
+								<img class="catalog-item__information-img" src="assets/img/catalog-item__information_1.jpg" alt="Изображение товара" width="217" height="229">
 								
 								<p class="catalog-item__information-text">
 									Mauris viverra magna.<br />
@@ -449,7 +502,7 @@
 							</div>
 	
 							<button class="button button_icon_basket button_color_green button_size_medium">
-								<img class="button__basket-icon" src="/assets/img/icon-basket.jpg" alt="Положить в корзину">
+								<img class="button__basket-icon" src="assets/img/icon-basket.png" alt="Положить в корзину">
 							</button>
 			
 					</article>
@@ -464,7 +517,7 @@
 	
 							<div class="catalog-item__information">
 								
-								<img class="catalog-item__information-img" src="/assets/img/catalog-item__information_12.jpg" alt="Изображение товара">
+								<img class="catalog-item__information-img" src="assets/img/catalog-item__information_1.jpg" alt="Изображение товара" width="217" height="229">
 								
 								<p class="catalog-item__information-text">
 									Curabitur pretium dui.<br />
@@ -474,7 +527,7 @@
 							</div>
 	
 							<button class="button button_icon_basket button_color_green button_size_medium">
-								<img class="button__basket-icon" src="/assets/img/icon-basket.jpg" alt="Положить в корзину">
+								<img class="button__basket-icon" src="assets/img/icon-basket.png" alt="Положить в корзину">
 							</button>
 			
 					</article>					
@@ -497,7 +550,7 @@
 		
 								<div class="catalog-item__information">
 									
-									<img class="catalog-item__information-img" src="/assets/img/catalog-item__information_13.jpg" alt="Изображение товара">
+									<img class="catalog-item__information-img" src="assets/img/catalog-item__information_1.jpg" alt="Изображение товара" width="217" height="229">
 									
 									<p class="catalog-item__information-text">
 										Sed tempus tellus.<br />
@@ -507,7 +560,7 @@
 								</div>
 		
 								<button class="button button_icon_basket button_color_green button_size_medium">
-									<img class="button__basket-icon" src="/assets/img/icon-basket.jpg" alt="Положить в корзину">
+									<img class="button__basket-icon" src="assets/img/icon-basket.png" alt="Положить в корзину">
 								</button>
 				
 					</article>
@@ -522,7 +575,7 @@
 	
 							<div class="catalog-item__information">
 								
-								<img class="catalog-item__information-img" src="/assets/img/catalog-item__information_14.jpg" alt="Изображение товара">
+								<img class="catalog-item__information-img" src="assets/img/catalog-item__information_1.jpg" alt="Изображение товара" width="217" height="229">
 								
 								<p class="catalog-item__information-text">
 									Nulla accumsan lect.<br />
@@ -532,7 +585,7 @@
 							</div>
 	
 							<button class="button button_icon_basket button_color_green button_size_medium">
-								<img class="button__basket-icon" src="/assets/img/icon-basket.jpg" alt="Положить в корзину">
+								<img class="button__basket-icon" src="assets/img/icon-basket.png" alt="Положить в корзину">
 							</button>
 			
 					</article>
@@ -547,7 +600,7 @@
 	
 							<div class="catalog-item__information">
 								
-								<img class="catalog-item__information-img" src="/assets/img/catalog-item__information_15.jpg" alt="Изображение товара">
+								<img class="catalog-item__information-img" src="assets/img/catalog-item__information_1.jpg" alt="Изображение товара" width="217" height="229">
 								
 								<p class="catalog-item__information-text">
 									Lorem Ipsum is simply<br />
@@ -557,7 +610,7 @@
 							</div>
 	
 							<button class="button button_icon_basket button_color_green button_size_medium">
-								<img class="button__basket-icon" src="/assets/img/icon-basket.jpg" alt="Положить в корзину">
+								<img class="button__basket-icon" src="assets/img/icon-basket.png" alt="Положить в корзину">
 							</button>
 			
 					</article>					
@@ -572,8 +625,10 @@
 					
 					<div class="sidebar-banner__images">
 						
-						<img class="sidebar-banner__background" src="/assets/img/sidebar-banner__background.jpg" alt="Feautured Glass">
-						
+						<div class="sidebar-banner__frame">
+							<img class="sidebar-banner__background" src="assets/img/sidebar-banner__background.jpg" alt="Feautured Glass">
+						</div>
+
 						<button class="sidebar-banner__button main-sidebar__button main-sidebar__button_color_blue main-sidebar__button_size_big">
 							Check It Out
 						</button>
@@ -582,11 +637,7 @@
 
 					<div class="sidebar-banner__scroll">
 						
-						<button class="button button_icon_scroll1 button_color_blue button_size_micro"></button>
-
-						<button class="button button_icon_scroll2 button_color_green button_size_micro"></button>
-
-						<button class="button button_icon_scroll3 button_color_green button_size_micro"></button>
+						<button class="button button_icon_scroll button_size_micro"></button>
 
 					</div>
 
