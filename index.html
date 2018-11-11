@@ -1,44 +1,52 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-	<head>
-	
-		<meta charset="UTF-8">
-		<meta name="keywords" content="уроки разработки">
-		<meta name="description" content="">
+<head>
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta charset="UTF-8">
+	<meta name="keywords" content="уроки разработки">
+	<meta name="description" content="">
 
-		<title>Уроки по веб-верстке</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-		<link rel="stylesheet" href="assets/css/style.css">
-		<link rel="shortcut icon" href="">
-		<link rel="canonical" href="">
+	<title>Уроки по веб-верстке</title>
 
-	</head>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
 
-	<body>
+	<link rel="stylesheet" href="assets/css/style.css">
 
-		<header class="header">
+	<link rel="shortcut icon" href="">
+	<link rel="canonical" href="">
 
-			<section class="hsettings header__settings">
+</head>
 
-				<section class="header__choice">
-					<form action="">
+<body>
+	<header class="header">
 
-						<label for="Language">
-							Language
+		<section class="header-settings header__settings">
+
+			<section class="header-settings__wrapper">
+
+				<section class="select-menu header-settings__select-menu">
+					<form class="select-menu__form" action="">
+
+						<label class="select-menu__label" for="Language">
+							Language:
 						</label>
-						<select name="Language" id="Language">
+						<select class="select-menu__select" name="Language" id="Language">
 							<option value="">English</option>
 							<option value="">Russian</option>
 						</select>
 
-						<label for="Currency">
-							Currency
+					</form>
+
+					<form class="select-menu__form" action="">
+
+						<label class="select-menu__label" for="Currency">
+							Currency:
 						</label>
-						<select name="Currency" id="Currency">
+						<select class="select-menu__select" name="Currency" id="Currency">
 							<option value="">USD</option>
 							<option value="">RUR</option>
 						</select>
@@ -46,356 +54,1006 @@
 					</form>
 				</section>
 
-				<nav class="hsettings__menu">
-					<ul>
-						<li><a href="/account.html">Account</a></li>
-						<li><a href="/wishlist.html">Wishlist</a></li>
-						<li><a href="/checkout.html">Checkout</a></li>
-						<li><a href="/log_in.html">Log In</a></li>
-						<li><a href="/sign_up.html">Sign Up</a></li>
-					</ul>
-				</nav>
-				
-			</section>
-
-			<section class="hmain header__main">
-
-				<section class="header__logo">
-					<img class="header__logo_img" src="/assets/img/header_logo.jpg" alt="Логотип">
-				</section>
-
-				<nav class="hmain__menu">
-					<ul>
-						<li><a href="/index.html">HOME</a></li>
-						<li><a href="/women.html">WOMEN</a></li>
-						<li><a href="/men.html">MEN</a></li>
-						<li><a href="/other.html">OTHER</a></li>
-						<li><a href="/purchase.html">PURCHASE</a></li>
+				<nav class="header-settings__menu">
+					<ul class="menu menu_type1">
+						<li class="menu__item"><a class="link link_menu" href="/account.html">Account</a></li>
+						<li class="menu__item"><a class="link link_menu" href="/wishlist.html">Wishlist</a></li>
+						<li class="menu__item"><a class="link link_menu" href="/checkout.html">Checkout</a></li>
+						<li class="menu__item"><a class="link link_menu" href="/log_in.html">Log In</a></li>
+						<li class="menu__item"><a class="link link_menu" href="/sign_up.html">Sign Up</a></li>
 					</ul>
 				</nav>
 
-				<section class="cartbox header__cartbox">
-					
-					<section class="cartbox__search">
-						<form action="">
-							<input type="search" name="text"> 						<!-- Поисковик по сайту? -->
-						</form>
-					</section>
-
-					<section class="cartbox__buttons">
-
-						<button class="button button--jhgjhg button--green button--mini">    <!-- Непонятная кнопка -->
-							<img src="/assets/img/button-jhgjhg.jpg" alt="Непонятная кнопка">
-						</button>
-
-						<button class="button button--cart button--green button--mini">
-							<img src="/assets/img/button-cart.jpg" alt="Корзина">
-						</button>
-
-					</section>
-
-					<section class="cartbox__links">
-						<a href="/cart.html">CART (0)</a>		<!-- А что со счетчиком товаров? -->
-					</section>
-
-				</section>
-
 			</section>
 
-			<section class="hslider header__slider">
+		</section>
 
-				<section class="hslider__background">
-					<img src="/assets/img/hslider_background.jpg" alt="Фоновое изображение">
-				</section>
+		<section class="header-main header__main">
 
-				<section class="hslider__ad">
-				
-					<section class="ad ad--rayBan">
-		
-						<p>
-							ALUMINIUM CLUB<br />
-							<b>EXPERIENCE RAY-BAN</b>
-						</p>
-						
-					</section>	
-							
-					<section class="ad ad--armany hidden">        <!-- Должно же еще что-то быть -->       
-						
-						<p>
-							
-						</p>
-						
-					</section>
+			<div class="header-main__wrapper">
 
-				</section>
+				<p class="header-main__logo">LEO Shop</p>
 
-				<section class="hslider__buttons">
+				<nav class="header-main__menu">
+					<ul class="menu menu_type2">
+						<li class="menu__item"><a class="link link_menu" href="/index.html">Home</a></li>
+						<li class="menu__item"><a class="link link_menu" href="/women.html">Women</a></li>
+						<li class="menu__item"><a class="link link_menu" href="/men.html">Men</a></li>
+						<li class="menu__item"><a class="link link_menu" href="/other.html">Other</a></li>
+						<li class="menu__item"><a class="link link_menu" href="/purchase.html">Purchase</a></li>
+					</ul>
+				</nav>
 
-					<button class="button button--toTheLeft button--gray button--big">
-						<img src="/assets/img/button-toTheLeft.jpg" alt="Влево">
-					</button>
+			</div>
 
-					<button class="button button--toTheRight button--gray button--big rotate">
-						<img src="/assets/img/button-toTheLeft.jpg" alt="Вправо">
-					</button>
+			<section class="cartbox header-main__cartbox">
 
-				</section>
+				<section class="cartbox__search">
+					<form class="cartbox__form" action="">
 
-			</section>
+						<!-- Поисковик по сайту? -->
 
-		</header>
-
-		<!-- <main class="main">
-			<section class="catalog">
-				<h2>
-					Featured Products
-				</h2>
-				<section class="catalog_items">
-					<article class="catalog_item">
-						<div class="catalog_item-label catalog_item-label__new">
-							New
-						</div>
-						<div class="catalog_item-description">
-							<img src="" alt="">
-							<p></p>
-						</div>
-						<button class="catalog_item-button">
-							Положить в корзину
-						</button>
-					</article>
-
-					<article class="catalog_item">
-						<div class="catalog_item-label catalog_item-label__sale">
-							Sale
-						</div>
-						<div class="catalog_item-description">
-							<img src="" alt="">
-							<p></p>
-							</div>
-						<button class="catalog_item-button">
-							Положить в корзину
-						</button>
-					</article>
-
-
-				</section>
-				<h2>
-					Staff Pick
-				</h2>
-
-
-
-			</section>
-			<section class="sidebar">
-				<section class="sidebar_banner">
-
-				</section>
-
-				<section class="sidebar_subscribe">
-					<form action="/subscribe.php">
-						<input type="text" name="email" />
-						<input type="submit" value="Subscribe">
+						<input class="cartbox__input" type="search" name="site-search">
 					</form>
 				</section>
 
+				<section class="cartbox__buttons">
+
+					<!-- Непонятная кнопка -->
+
+					<button class="button button_icon_tag button_color_green button_size_mini">
+						<img class="button__tag-icon" src="assets/img/icon_tag.png" alt="Бирка">
+					</button>
+
+					<button class="button button_icon_cart button_color_green button_size_mini">
+						<img class="button__cart-icon" src="assets/img/icon-cart.png" alt="Корзина">
+					</button>
+
+				</section>
+
+				<section class="cartbox__link">
+
+					<!-- А что со счетчиком товаров? -->
+
+					<a class="link link_cart" href="/cart.html">Cart (0)</a>
+
+				</section>
+
 			</section>
-		</main> -->
 
-		<footer class="footer">
+		</section>
 
-			<section class="footer__delivery">
+		<section class="header-slider header__slider">
 
+			<ul class="header-slider__list">
+
+				<li class="header-slider__list-item">
+
+					<section class="header-slider__background">
+						<img class="header-slider__background-img" src="assets/img/header-slider__background1.jpg" alt="Фоновое изображение"
+						 width="1400" height="475">
+					</section>
+
+					<section class="ad header-slider__ad">
+
+						<h2 class="ad__header">
+							Aluminium Club
+						</h2>
+						<h3 class="ad__subheader">
+							Experience Ray-Ban
+						</h3>
+
+					</section>
+
+				</li>
+
+				<li class="header-slider__list-item">
+
+					<section class="header-slider__background">
+						<img class="header-slider__background-img" src="assets/img/header-slider__background2.jpg" alt="Фоновое изображение"
+						 width="1400" height="475">
+					</section>
+
+					<section class="ad header-slider__ad">
+
+						<h2 class="ad__header">
+							Aluminium Club
+						</h2>
+						<h3 class="ad__subheader">
+							Experience Ray-Ban
+						</h3>
+
+					</section>
+
+				</li>
+
+				<li class="header-slider__list-item">
+
+					<section class="header-slider__background">
+						<img class="header-slider__background-img" src="assets/img/header-slider__background3.jpg" alt="Фоновое изображение"
+						 width="1400" height="475">
+					</section>
+
+					<section class="ad header-slider__ad">
+
+						<h2 class="ad__header">
+							Aluminium Club
+						</h2>
+						<h3 class="ad__subheader">
+							Experience Ray-Ban
+						</h3>
+
+					</section>
+
+				</li>
+
+			</ul>
+
+			<section class="header-slider__buttons">
+
+				<button class="button button_icon_toTheLeft button_color_white button_size_big">
+					<img class="button__toTheLeft-icon" src="assets/img/icon-toTheLeft.png" alt="Влево">
+				</button>
+
+				<button class="button button_icon_toTheRight button_color_white button_size_big rotate180deg">
+					<img class="button__toTheLeft-icon" src="assets/img/icon-toTheLeft.png" alt="Вправо">
+				</button>
+
+			</section>
+
+		</section>
+
+	</header>
+
+	<main class="main">
+
+		<section class="main-catalog main__catalog">
+
+			<!-- То, что фотки повторяются нужно учитывать, или это пример такой просто? 
+					Потому что товары как бы разные -->
+
+			<h2 class="main-catalog__header">
+				Featured Products
+			</h2>
+
+			<section class="main-catalog__featuredProducts">
+
+				<article class="catalog-item main-catalog__item">
+
+					<div class="catalog-item__lable catalog-item__lable_new">
+						<div class="catalog-item__lable-shadow">
+
+						</div>
+						<p class="catalog-item__lable-text">
+							New
+						</p>
+					</div>
+
+					<div class="catalog-item__image">
+						<img class="catalog-item__icon" src="assets/img/catalog-item__information_1.jpg" alt="Изображение товара">
+					</div>
+
+					<section class="catalog-item__information">
+
+						<div class="catalog-item__text-wrapper">
+
+							<p class="catalog-item__information-text">
+								Lorem Ipsum is simply.
+							</p>
+
+							<p class="catalog-item__information-price">
+								$388.00
+							</p>
+
+						</div>
+
+						<button class="button button_icon_basket button_color_green button_size_medium">
+							<img class="button__basket-icon" src="assets/img/icon-basket.png" alt="Положить в корзину">
+						</button>
+
+					</section>
+
+				</article>
+
+				<article class="catalog-item main-catalog__item">
+
+					<div class="catalog-item__lable catalog-item__lable_new hidden">
+						<div class="catalog-item__lable-shadow">
+
+						</div>
+						<p class="catalog-item__lable-text">
+							New
+						</p>
+					</div>
+
+					<div class="catalog-item__image">
+						<img class="catalog-item__icon" src="assets/img/catalog-item__information_1.jpg" alt="Изображение товара" width="217"
+						 height="229">
+					</div>
+
+					<section class="catalog-item__information">
+
+						<div class="catalog-item__text-wrapper">
+
+							<p class="catalog-item__information-text">
+								Nullam vestibulum.
+							</p>
+
+							<p class="catalog-item__information-price">
+								$90.00
+							</p>
+
+						</div>
+
+						<button class="button button_icon_basket button_color_green button_size_medium">
+							<img class="button__basket-icon" src="assets/img/icon-basket.png" alt="Положить в корзину">
+						</button>
+
+					</section>
+
+				</article>
+
+				<article class="catalog-item main-catalog__item">
+
+					<div class="catalog-item__lable catalog-item__lable_sale">
+						<div class="catalog-item__lable-shadow">
+
+						</div>
+						<p class="catalog-item__lable-text">
+							Sale
+						</p>
+					</div>
+
+					<div class="catalog-item__image">
+						<img class="catalog-item__icon" src="assets/img/catalog-item__information_1.jpg" alt="Изображение товара" width="217"
+						 height="229">
+					</div>
+
+					<section class="catalog-item__information">
+
+						<div class="catalog-item__text-wrapper">
+
+							<p class="catalog-item__information-text">
+								Donec et lorem suscipit.
+							</p>
+
+							<p class="catalog-item__information-firstPrise">
+								$460
+							</p>
+
+							<p class="catalog-item__information-price">
+								$300.00
+							</p>
+
+						</div>
+
+						<button class="button button_icon_basket button_color_green button_size_medium">
+							<img class="button__basket-icon" src="assets/img/icon-basket.png" alt="Положить в корзину">
+						</button>
+
+					</section>
+
+				</article>
+
+				<article class="catalog-item main-catalog__item">
+
+					<div class="catalog-item__lable catalog-item__lable_new hidden">
+						<div class="catalog-item__lable-shadow">
+
+						</div>
+						<p class="catalog-item__lable-text">
+							New
+						</p>
+					</div>
+
+					<div class="catalog-item__image">
+						<img class="catalog-item__icon" src="assets/img/catalog-item__information_1.jpg" alt="Изображение товара" width="217"
+						 height="229">
+					</div>
+
+					<section class="catalog-item__information">
+
+						<div class="catalog-item__text-wrapper">
+
+							<p class="catalog-item__information-text">
+								Curabitur pretium dui.
+							</p>
+
+							<p class="catalog-item__information-price">
+								$180.00
+							</p>
+
+						</div>
+
+						<button class="button button_icon_basket button_color_green button_size_medium">
+							<img class="button__basket-icon" src="assets/img/icon-basket.png" alt="Положить в корзину">
+						</button>
+
+					</section>
+
+				</article>
+
+				<article class="catalog-item main-catalog__item">
+
+					<div class="catalog-item__lable catalog-item__lable_new">
+						<div class="catalog-item__lable-shadow">
+
+						</div>
+						<p class="catalog-item__lable-text">
+							New
+						</p>
+					</div>
+
+					<div class="catalog-item__image">
+						<img class="catalog-item__icon" src="assets/img/catalog-item__information_1.jpg" alt="Изображение товара" width="217"
+						 height="229">
+					</div>
+
+					<section class="catalog-item__information">
+
+						<div class="catalog-item__text-wrapper">
+
+							<p class="catalog-item__information-text">
+								Lorem Ipsum is simply
+							</p>
+
+							<p class="catalog-item__information-price">
+								$278.00
+							</p>
+
+						</div>
+
+						<button class="button button_icon_basket button_color_green button_size_medium">
+							<img class="button__basket-icon" src="assets/img/icon-basket.png" alt="Положить в корзину">
+						</button>
+
+					</section>
+
+				</article>
+
+				<article class="catalog-item main-catalog__item">
+
+					<div class="catalog-item__lable catalog-item__lable_new hidden">
+						<div class="catalog-item__lable-shadow">
+
+						</div>
+						<p class="catalog-item__lable-text">
+							New
+						</p>
+					</div>
+
+					<div class="catalog-item__image">
+						<img class="catalog-item__icon" src="assets/img/catalog-item__information_1.jpg" alt="Изображение товара" width="217"
+						 height="229">
+					</div>
+
+					<section class="catalog-item__information">
+
+						<div class="catalog-item__text-wrapper">
+
+							<p class="catalog-item__information-text">
+								Sed tempus tellus .
+							</p>
+
+							<p class="catalog-item__information-price">
+								$378.00
+							</p>
+
+						</div>
+
+						<button class="button button_icon_basket button_color_green button_size_medium">
+							<img class="button__basket-icon" src="assets/img/icon-basket.png" alt="Положить в корзину">
+						</button>
+
+					</section>
+
+				</article>
+
+				<article class="catalog-item main-catalog__item">
+
+					<div class="catalog-item__lable catalog-item__lable_new">
+						<div class="catalog-item__lable-shadow">
+
+						</div>
+						<p class="catalog-item__lable-text">
+							New
+						</p>
+					</div>
+
+					<div class="catalog-item__image">
+						<img class="catalog-item__icon" src="assets/img/catalog-item__information_1.jpg" alt="Изображение товара" width="217"
+						 height="229">
+					</div>
+
+					<section class="catalog-item__information">
+
+						<div class="catalog-item__text-wrapper">
+
+							<p class="catalog-item__information-text">
+								Lorem Ipsum is simply
+							</p>
+
+							<p class="catalog-item__information-price">
+								$378.00
+							</p>
+
+						</div>
+
+						<button class="button button_icon_basket button_color_green button_size_medium">
+							<img class="button__basket-icon" src="assets/img/icon-basket.png" alt="Положить в корзину">
+						</button>
+
+					</section>
+
+				</article>
+
+				<article class="catalog-item main-catalog__item">
+
+					<div class="catalog-item__lable catalog-item__lable_sale">
+						<div class="catalog-item__lable-shadow">
+
+						</div>
+						<p class="catalog-item__lable-text">
+							Sale
+						</p>
+					</div>
+
+					<div class="catalog-item__image">
+						<img class="catalog-item__icon" src="assets/img/catalog-item__information_1.jpg" alt="Изображение товара" width="217"
+						 height="229">
+					</div>
+
+					<section class="catalog-item__information">
+
+						<div class="catalog-item__text-wrapper">
+
+							<p class="catalog-item__information-text">
+								Etiam egestas velit.
+							</p>
+
+							<p class="catalog-item__information-firstPrise">
+								$460
+							</p>
+
+							<p class="catalog-item__information-price">
+								$200.00
+							</p>
+
+						</div>
+
+						<button class="button button_icon_basket button_color_green button_size_medium">
+							<img class="button__basket-icon" src="assets/img/icon-basket.png" alt="Положить в корзину">
+						</button>
+
+					</section>
+
+				</article>
+
+				<article class="catalog-item main-catalog__item">
+
+					<div class="catalog-item__lable catalog-item__lable_new">
+						<div class="catalog-item__lable-shadow">
+
+						</div>
+						<p class="catalog-item__lable-text">
+							New
+						</p>
+					</div>
+
+					<div class="catalog-item__image">
+						<img class="catalog-item__icon" src="assets/img/catalog-item__information_1.jpg" alt="Изображение товара" width="217"
+						 height="229">
+					</div>
+
+					<section class="catalog-item__information">
+
+						<div class="catalog-item__text-wrapper">
+
+							<p class="catalog-item__information-text">
+								Mauris viverra magna.
+							</p>
+
+							<p class="catalog-item__information-price">
+								$370.00
+							</p>
+
+						</div>
+
+						<button class="button button_icon_basket button_color_green button_size_medium">
+							<img class="button__basket-icon" src="assets/img/icon-basket.png" alt="Положить в корзину">
+						</button>
+
+					</section>
+
+				</article>
+
+			</section>
+
+			<h2 class="main-catalog__header">
+				Staff Pick
+			</h2>
+
+			<section class="main-catalog__staffPick">
+
+				<article class="catalog-item main-catalog__item">
+
+					<div class="catalog-item__lable catalog-item__lable_new">
+						<div class="catalog-item__lable-shadow">
+
+						</div>
+						<p class="catalog-item__lable-text">
+							New
+						</p>
+					</div>
+
+					<div class="catalog-item__image">
+						<img class="catalog-item__icon" src="assets/img/catalog-item__information_1.jpg" alt="Изображение товара" width="217"
+						 height="229">
+					</div>
+
+					<section class="catalog-item__information">
+
+						<div class="catalog-item__text-wrapper">
+
+							<p class="catalog-item__information-text">
+								Lorem Ipsum is simply
+							</p>
+
+							<p class="catalog-item__information-price">
+								$378.00
+							</p>
+
+						</div>
+
+						<button class="button button_icon_basket button_color_green button_size_medium">
+							<img class="button__basket-icon" src="assets/img/icon-basket.png" alt="Положить в корзину">
+						</button>
+
+					</section>
+
+				</article>
+
+				<article class="catalog-item main-catalog__item">
+
+					<div class="catalog-item__lable catalog-item__lable_new hidden">
+						<div class="catalog-item__lable-shadow">
+
+						</div>
+						<p class="catalog-item__lable-text">
+							New
+						</p>
+					</div>
+
+					<div class="catalog-item__image">
+						<img class="catalog-item__icon" src="assets/img/catalog-item__information_1.jpg" alt="Изображение товара" width="217"
+						 height="229">
+					</div>
+
+					<section class="catalog-item__information">
+
+						<div class="catalog-item__text-wrapper">
+
+							<p class="catalog-item__information-text">
+								Mauris viverra magna.
+							</p>
+
+							<p class="catalog-item__information-price">
+								$278.00
+							</p>
+
+						</div>
+
+						<button class="button button_icon_basket button_color_green button_size_medium">
+							<img class="button__basket-icon" src="assets/img/icon-basket.png" alt="Положить в корзину">
+						</button>
+
+					</section>
+
+				</article>
+
+				<article class="catalog-item main-catalog__item">
+
+					<div class="catalog-item__lable catalog-item__lable_new">
+						<div class="catalog-item__lable-shadow">
+
+						</div>
+						<p class="catalog-item__lable-text">
+							New
+						</p>
+					</div>
+
+					<div class="catalog-item__image">
+						<img class="catalog-item__icon" src="assets/img/catalog-item__information_1.jpg" alt="Изображение товара" width="217"
+						 height="229">
+					</div>
+
+					<section class="catalog-item__information">
+
+						<div class="catalog-item__text-wrapper">
+
+							<p class="catalog-item__information-text">
+								Curabitur pretium dui.
+							</p>
+
+							<p class="catalog-item__information-price">
+								$188.00
+							</p>
+
+						</div>
+
+						<button class="button button_icon_basket button_color_green button_size_medium">
+							<img class="button__basket-icon" src="assets/img/icon-basket.png" alt="Положить в корзину">
+						</button>
+
+					</section>
+
+				</article>
+
+			</section>
+
+			<h2 class="main-catalog__header">
+				New Products
+			</h2>
+
+			<section class="main-catalog__newProducts">
+
+				<article class="catalog-item main-catalog__item">
+
+					<div class="catalog-item__lable catalog-item__lable_new">
+						<div class="catalog-item__lable-shadow">
+
+						</div>
+						<p class="catalog-item__lable-text">
+							New
+						</p>
+					</div>
+
+					<div class="catalog-item__image">
+						<img class="catalog-item__icon" src="assets/img/catalog-item__information_1.jpg" alt="Изображение товара" width="217"
+						 height="229">
+					</div>
+
+					<section class="catalog-item__information">
+
+						<div class="catalog-item__text-wrapper">
+
+							<p class="catalog-item__information-text">
+								Sed tempus tellus.
+							</p>
+
+							<p class="catalog-item__information-price">
+								$90.00
+							</p>
+
+						</div>
+
+						<button class="button button_icon_basket button_color_green button_size_medium">
+							<img class="button__basket-icon" src="assets/img/icon-basket.png" alt="Положить в корзину">
+						</button>
+
+					</section>
+
+				</article>
+
+				<article class="catalog-item main-catalog__item">
+
+					<div class="catalog-item__lable catalog-item__lable_new">
+						<div class="catalog-item__lable-shadow">
+
+						</div>
+						<p class="catalog-item__lable-text">
+							New
+						</p>
+					</div>
+
+					<div class="catalog-item__image">
+						<img class="catalog-item__icon" src="assets/img/catalog-item__information_1.jpg" alt="Изображение товара" width="217"
+						 height="229">
+					</div>
+
+					<section class="catalog-item__information">
+
+						<div class="catalog-item__text-wrapper">
+
+							<p class="catalog-item__information-text">
+								Nulla accumsan lect.
+								<p class="catalog-item__information-price">
+									$60.00
+								</p>
+
+						</div>
+
+						<button class="button button_icon_basket button_color_green button_size_medium">
+							<img class="button__basket-icon" src="assets/img/icon-basket.png" alt="Положить в корзину">
+						</button>
+
+					</section>
+
+				</article>
+
+				<article class="catalog-item main-catalog__item">
+
+					<div class="catalog-item__lable catalog-item__lable_new">
+						<div class="catalog-item__lable-shadow">
+
+						</div>
+						<p class="catalog-item__lable-text">
+							New
+						</p>
+					</div>
+
+					<div class="catalog-item__image">
+						<img class="catalog-item__icon" src="assets/img/catalog-item__information_1.jpg" alt="Изображение товара" width="217"
+						 height="229">
+					</div>
+
+					<section class="catalog-item__information">
+
+						<div class="catalog-item__text-wrapper">
+
+							<p class="catalog-item__information-text">
+								Lorem Ipsum is simply
+							</p>
+
+							<p class="catalog-item__information-price">
+								$378.00
+							</p>
+
+						</div>
+
+						<button class="button button_icon_basket button_color_green button_size_medium">
+							<img class="button__basket-icon" src="assets/img/icon-basket.png" alt="Положить в корзину">
+						</button>
+
+					</section>
+
+				</article>
+
+			</section>
+
+		</section>
+
+		<section class="main-sidebar main__sidebar">
+
+			<section class="sidebar-banner main-sidebar__banner">
+
+				<div class="sidebar-banner__images">
+
+					<div class="sidebar-banner__frame">
+						<img class="sidebar-banner__background" src="assets/img/sidebar-banner__background.jpg" alt="Feautured Glass">
+					</div>
+
+					<button class="sidebar-banner__button main-sidebar__button main-sidebar__button_color_blue main-sidebar__button_size_big">
+						Check It Out
+					</button>
+
+				</div>
+
+				<div class="sidebar-banner__scroll">
+					<div class="scroll-wrapper">
+						<button class="button button_icon_scroll button_size_micro"></button>
+						<button class="button button_icon_scroll button_size_micro"></button>
+						<button class="button button_icon_scroll button_size_micro"></button>
+					</div>
+				</div>
+
+			</section>
+
+			<section class="sidebar-subscribe main-sidebar__subscribe">
+
+				<h3 class="sidebar-subscribe__header">
+					Newsletters SignUp
+				</h3>
+
+				<p class="sidebar-subscribe__text">
+					Lorem ipsum dolor sit amen, dolor imun ra adlip
+				</p>
+
+				<form class="sidebar-subscribe__form" action="/subscribe.php">
+					<input class="sidebar-subscribe__input" type="text" name="email">
+					<input class="sidebar-subscribe__button main-sidebar__button main-sidebar__button_color_green main-sidebar__button_size_small"
+					 type="submit" value="Subscribe">
+				</form>
+
+			</section>
+
+		</section>
+
+	</main>
+
+	<footer class="footer">
+
+		<section class="footer__delivery">
+			<div class="footer__delivery-wrapper">
 				<section class="footer__shipping">
 
-					<a href="/shipping_terms.html">										<!-- 	Имеет ли шансы жить такая конструкция? -->
-						<div class="button button--shipping button--blue button--big">
-							<img src="/assets/img/shipping.jpg" alt="Доставка">
-						</div>
-						FREE SHIPPING ON ORDERS OVER 100					<!-- 	Как вставлять знаки? доллара, в частности -->
+					<a class="button button_icon_shipping button_color_white button_size_big" href="/shipping_terms.html">
+						<img class="button__shipping-icon" src="assets/img/icon-shipping.png" alt="Доставка">
+					</a>
+
+					<a class="link link_delivery" href="/shipping_terms.html">
+
+						<!-- 	Как вставлять знаки? доллара, в частности -->
+
+						Free shipping on orders over $100
 					</a>
 
 				</section>
 
 				<section class="footer__callUs">
 
-					<a href="tel:+140988880099">
-						<div class="button button-callUs button-blue button-big">
-							<img src="/assets/img/callUs.jpg" alt="Звонок">
-						</div>	
-						CALL US! TOLL FREE- 409-8888-0099
+					<a class="button button_icon_callUs button_color_white button_size_big" href="tel:+140988880099">
+						<img class="button__callUs-icon" src="assets/img/icon-callUs.png" alt="Звонок">
+					</a>
+
+					<a class="link link_delivery" href="tel:+140988880099">
+						Call us! Toll free- 409-8888-0099
 					</a>
 
 				</section>
+			</div>
+		</section>
 
-			</section>
+		<section class="footer-reference footer__reference">
 
-			<section class="fref footer__reference">
+			<!-- А как осуществить привязку к соц сетям? -->
 
-				<section class="facebook fref__facebook">				<!-- А как осуществить привязку к соц сетям? -->
+			<div class="footer-reference__wrapper">
 
-					<div class="fref__header">
-						<h3>FACEBOOK</h3>
-					</div>
+				<section class="facebook footer-reference__facebook">
 
-					<div class="facebook__members">	
-						<p>20000 Members</p>
-					</div>
+					<h3 class="footer-reference__header">Facebook</h3>
 
-					<button class="facebook__like">
-						<img src="/assets/img/facebook-like.jpg" alt="Поставить лайк">
+					<p class="facebook__text">20000 Members</p>
+
+					<button class="facebook__button">
+						<img class="facebook__like-icon" src="assets/img/icon-facebook_like.png" alt="Поставить лайк">
 					</button>
 
 					<section class="facebook__photos">
-						<div><img src="/assets/img/photo1.jpg" alt="Фото"></div>
-						<div><img src="/assets/img/photo2.jpg" alt="Фото"></div>
-						<div><img src="/assets/img/photo3.jpg" alt="Фото"></div>
-						<div><img src="/assets/img/photo4.jpg" alt="Фото"></div>
-						<div><img src="/assets/img/photo5.jpg" alt="Фото"></div>
-						<div><img src="/assets/img/photo6.jpg" alt="Фото"></div>
-						<div><img src="/assets/img/photo7.jpg" alt="Фото"></div>
-						<div><img src="/assets/img/photo8.jpg" alt="Фото"></div>
+						<div class="facebook__photoplace"><img class="facebook__photo-icon" src="assets/img/icon-photo1.jpg" alt="Фото"
+							 width="49" height="49"></div>
+						<div class="facebook__photoplace"><img class="facebook__photo-icon" src="assets/img/icon-photo1.jpg" alt="Фото"
+							 width="49" height="49"></div>
+						<div class="facebook__photoplace"><img class="facebook__photo-icon" src="assets/img/icon-photo1.jpg" alt="Фото"
+							 width="49" height="49"></div>
+						<div class="facebook__photoplace"><img class="facebook__photo-icon" src="assets/img/icon-photo1.jpg" alt="Фото"
+							 width="49" height="49"></div>
+						<div class="facebook__photoplace"><img class="facebook__photo-icon" src="assets/img/icon-photo1.jpg" alt="Фото"
+							 width="49" height="49"></div>
+						<div class="facebook__photoplace"><img class="facebook__photo-icon" src="assets/img/icon-photo1.jpg" alt="Фото"
+							 width="49" height="49"></div>
+						<div class="facebook__photoplace"><img class="facebook__photo-icon" src="assets/img/icon-photo1.jpg" alt="Фото"
+							 width="49" height="49"></div>
+						<div class="facebook__photoplace"><img class="facebook__photo-icon" src="assets/img/icon-photo1.jpg" alt="Фото"
+							 width="49" height="49"></div>
 					</section>
 
-					<div class="facebook__plugin">
-						<a href="https://www.facebook.com">Facebook social plugin</a>
-					</div>
+					<a class="link link-facebook_plugin" href="https://www.facebook.com">facebook social plugin</a>
 
 				</section>
 
-				<section class="twitter fref__fromTwitter">
-					
-					<div class="fref__header">
-						<h3>FROM TWITTER</h3>
-					</div>
-	
+				<section class="twitter footer-reference__fromTwitter">
+
+					<h3 class="footer-reference__header">From twitter</h3>
+
 					<section class="twitter__content">
 
-						<a href="https://twitter.com">
-							<div class="button button--twitter buttom--blue button--medium">
-								<img src="/assets/img/twitter-logo.jpg" alt="Твиттер">
-							</div>
+						<a class="button button_icon_twitter button_color_white button_size_medium" href="https://twitter.com">
+							<img class="button__twitter-icon" src="assets/img/icon-twitter.png" alt="Твиттер">
 						</a>
 
-						<div class="twitter__description">
-							<p>
-								Lorem Ipsum is simply 
-								dummy text of the printing 
-								and <span class="light-blue">typesetting industry.</span> 		<!-- Или это ссылки? -->
-								<span class="light-blue">Lorem Ipsum</span> has been the
-							</p>
-						</div>
+						<p class="twitter__text">
+							Lorem Ipsum is simply
+							dummy text of the printing
+
+							<!-- Или это ссылки? -->
+
+							and <span class="light-blue">typesetting industry.</span>
+							<span class="light-blue">Lorem Ipsum</span> has been the
+						</p>
 
 					</section>
 
 					<section class="twitter__content">
 
-						<a href="https://twitter.com">
-							<div class="button button--twitter buttom--blue button--medium">
-								<img src="/assets/img/twitter-logo.jpg" alt="Твиттер">
-							</div>
+						<a class="button button_icon_twitter button_color_white button_size_medium" href="https://twitter.com">
+							<img class="button__twitter-icon" src="assets/img/icon-twitter.png" alt="Твиттер">
 						</a>
 
-						<div class="twitter__description">
-							<p>
-								Lorem Ipsum is simply 
-								dummy text of the printing 
-								and <span class="light-blue">typesetting industry.</span> 		<!-- Или это ссылки? -->
-								<span class="light-blue">Lorem Ipsum</span> has been the
-							</p>
-						</div>
-	
+						<p class="twitter__text">
+							Lorem Ipsum is simply
+							dummy text of the printing
+
+							<!-- Или это ссылки? -->
+
+							and <span class="light-blue">typesetting industry.</span>
+							<span class="light-blue">Lorem Ipsum</span> has been the
+						</p>
+
 					</section>
 
 				</section>
 
-				<section class="information fref__information">
-		
-					<div class="fref__header">
-						<h3>INFORMATION</h3>
-					</div>
+				<section class="information footer-reference__information">
 
-					<ul class="information__list">
-						<li>Sed ultrices purus non.</li>
-						<li>sodales sodales.</li>
-						<li>Curabitur pretium dui vitae.</li>
-						<li>Donec gravida mi in nisl</li>
-						<li>faucibus leo condimentum.</li>
-						<li>Donec et lorem suscipit.</li>
+					<h3 class="footer-reference__header">Information</h3>
+
+					<ul class="information-list">
+						<li class="information-list__item">Sed ultrices purus non.</li>
+						<li class="information-list__item">sodales sodales.</li>
+						<li class="information-list__item">Curabitur pretium dui vitae.</li>
+						<li class="information-list__item">Donec gravida mi in nisl</li>
+						<li class="information-list__item">faucibus leo condimentum.</li>
+						<li class="information-list__item">Donec et lorem suscipit.</li>
 					</ul>
 
 				</section>
 
-				<section class="contact fref__contactUs">
+				<section class="contactUs footer-reference__contactUs">
 
-					<div class="fref__header">
-						<h3>CONTACT US</h3>
-					</div>
+					<h3 class="footer-reference__header">Contact us</h3>
 
-					<section class="contact__adds">
-						<p>
-							Leo Store<br/>
-							Leopards media<br/>
-							KVM Rpad, 4590GH<br/>
-							<a href="tel:+148988880099">+1 489-8888-0099</a><br/>
-							<a href="mailto:mail@email.com">mail@email.com</a>
-						</p>
-					</section>
-
-					<section class="contact__buttons">
-
-						<a href="#">
-							<div class="button button--g buttom--blue button--mini">
-								<img src="/assets/img/g-logo.jpg" alt="">
-							</div>
-						</a>
-
-						<a href="#">
-							<div class="button button--in buttom--blue button--mini">
-								<img src="/assets/img/in-logo.jpg" alt="">
-							</div>
-						</a>
-
-						<a href="#">
-							<div class="button button--w buttom--blue button--mini">
-								<img src="/assets/img/w-logo.jpg" alt="">
-							</div>
-						</a>
-
-						<a href="#">
-							<div class="button button--f buttom--blue button--mini">
-								<img src="/assets/img/f-logo.jpg" alt="">
-							</div>
-						</a>
-
-					</section>
-
-				</section>
-
-			</section>
-
-			<section class="fcopyright footer__copyright">
-
-				<section class="fcopyright__author">
-					<p>
-						Copyright 2013 Css Author, All Rights Reserved.			<!-- Опять значок копирайта. Неужели его картинкой вставлять? -->	
+					<p class="contactUs__text">
+						Leo Store<br />
+						Leopards media<br />
+						KVM Rpad, 4590GH
 					</p>
+
+					<a class="link link_contactUs-telephone" href="tel:+148988880099">+1 489-8888-0099</a>
+					<a class="link link_contactUs-email" href="mailto:mail@email.com">mail@email.com</a>
+
+					<section class="contactUs__buttons">
+
+						<a class="button button_icon_google button_color_white button_size_mini" href="#">
+							<img class="button__google-icon" src="assets/img/icon-google.png" alt="">
+						</a>
+
+						<a class="button button_icon_linkedin button_color_white button_size_mini" href="#">
+							<img class="button__linkedin-icon" src="assets/img/icon-linkedin.png" alt="">
+						</a>
+
+						<a class="button button_icon_rss button_color_white button_size_mini" href="#">
+							<img class="button__rss-icon" src="assets/img/icon-rss.png" alt="">
+						</a>
+
+						<a class="button button_icon_facebook button_color_white button_size_mini" href="#">
+							<img class="button__facebook-icon" src="assets/img/icon-facebook.png" alt="">
+						</a>
+
+					</section>
+
 				</section>
 
-				<nav class="fcopyright__menu">
-					<ul>
-						<li><a href="/about_us.html">About Us</a></li>
-						<li><a href="/delivery.html">Delivery & Returns</a></li>
-						<li><a href="/conditions.html">Terms & Conditions</a></li>
-						<li><a href="/contacts.html">Contact Us</a></li>
+			</div>
+
+		</section>
+
+		<section class="footer-copyright footer__copyright">
+
+			<div class="footer-copyright__wrapper">
+				<p class="footer-copyright__text">
+					<!-- Опять значок копирайта. Неужели его картинкой вставлять? -->
+
+					Copyright 2013 Css Author, All Rights Reserved.
+				</p>
+
+				<nav class="footer-copyright__menu">
+					<ul class="menu menu_type1">
+						<li class="menu__item"><a class="link link_menu" href="/about_us.html">About Us</a></li>
+						<li class="menu__item"><a class="link link_menu" href="/delivery.html">Delivery & Returns</a></li>
+						<li class="menu__item"><a class="link link_menu" href="/conditions.html">Terms & Conditions</a></li>
+						<li class="menu__item"><a class="link link_menu" href="/contacts.html">Contact Us</a></li>
 					</ul>
 				</nav>
+			</div>
 
-			</section>
+		</section>
 
-		</footer>
-
-	</body>
+	</footer>
+</body>
 
 </html>
 
-<!-- и как удалять табуляции сразу нескольких строк? (после копирования лишние появляются) -->
+<!-- и где посмотреть список горячих сочетаний клавиш, в частности, 
+	как удалять табуляции сразу нескольких строк? (после копирования лишние появляются) -->
