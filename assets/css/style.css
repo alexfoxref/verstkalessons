@@ -225,8 +225,7 @@ body {
                         width: 100%;
                     }
 
-                        .header-slider__background-img {
-                        }
+                        .header-slider__background-img {}
   
                     .header-slider__ad {
                         display: block;
@@ -279,11 +278,18 @@ body {
                 margin-top: -271px;
             }
 
-                .button_icon_toTheLeft {}
+                .button_icon_toTheLeft {
+                    display: block;
+                }
 
-                    .button__toTheLeft-icon {}
+                    .button__toTheLeft-icon {
+                        display: block;
+                        margin-left: calc(49px/2);
+                    }
 
-                .button_icon_toTheRight {}
+                .button_icon_toTheRight {
+                    display: block;
+                }
 
 
 
@@ -560,8 +566,18 @@ body {
                                     background-color: #4cb1ca;
                                 }
 
+                                .main-sidebar__button_color_blue:hover {
+                                    box-shadow: 0px 0px 1px 1px #4cb1ca;
+                                    cursor: pointer;
+                                }
+
                                 .main-sidebar__button_color_green {
                                     background-color: #7eb123;
+                                }
+
+                                .main-sidebar__button_color_green:hover {
+                                    box-shadow: 0px 0px 1px 1px #7eb123;
+                                    cursor: pointer;
                                 }
 
                                 .main-sidebar__button_size_big {
@@ -590,8 +606,18 @@ body {
                                 background-color: #4cb1ca;
                             }
 
+                            .button_icon_scroll:nth-child(1):hover {
+                                box-shadow: 0px 0px 1px 1px #4cb1ca;
+                                cursor: pointer;
+                            }
+
                             .button_icon_scroll:not(:nth-child(1)) {
                                 background-color: #7db122;
+                            }
+
+                            .button_icon_scroll:not(:nth-child(1)):hover {
+                                box-shadow: 0px 0px 1px 1px #7db122;
+                                cursor: pointer;
                             }
 
             .main-sidebar__subscribe {}
@@ -695,7 +721,7 @@ body {
                 align-items: center;
             }
 
-                .button_icon_shipping {                }
+                .button_icon_shipping {}
 
                     .button__shipping-icon {
                         margin-left: calc(33px/2);
@@ -760,6 +786,12 @@ body {
                         padding: 0;
                         margin: 0;
                     }
+
+                    .facebook__button:hover {
+                        box-shadow: 0px 0px 1px 1px #fff;
+                        cursor: pointer;
+                    }
+
 
                         .facebook__like-icon {
                             display: block;
@@ -1021,8 +1053,8 @@ body {
     text-decoration: none;
 }
 
-.header-settings__menu .link:visited {
-    color: #fff;
+.link:visited {
+    color: inherit;
 }
 
 .header-main .link:visited {
@@ -1030,13 +1062,20 @@ body {
 }
 
 .header-main .link:hover {
-    color: #b7b7b7;
+    text-shadow: 0px 0px 1px #656565;
+    cursor: pointer;
 }
 
     .link_menu {}
 
     .header-settings__menu .link_menu:hover {
-        color: #bef2ff;
+        text-shadow: 0px 0px 1px #fff;
+        cursor: pointer;
+    }
+
+    .footer-copyright__menu .link_menu:hover {
+        text-shadow: 0px 0px 1px #5599aa;
+        cursor: pointer;
     }
 
     .link_cart {}
@@ -1077,6 +1116,14 @@ body {
         padding-left: 7px
     }
 
+    .link_contactUs-email:hover,
+    .link_contactUs-telephone:hover,
+    .link-facebook_plugin:hover,
+    .link_delivery:hover {
+        text-shadow: 0px 0px 1px #fff;
+        cursor: pointer;
+    }
+
 .button {
     display: block;
     box-sizing: border-box;
@@ -1089,8 +1136,19 @@ body {
         background-color: #7db122;
     }
 
+    .button_color_green:hover {
+        box-shadow: 0px 0px 1px 1px #7db122;
+        cursor: pointer;
+    }
+
+
     .button_color_white {
         background-color: #fff;
+    }
+
+    .button_color_white:hover {
+        box-shadow: 0px 0px 1px 1px #fff;
+        cursor: pointer;
     }
 
     .button_size_micro {
