@@ -1,0 +1,62 @@
+.main-catalog {
+	width: 757px;
+	margin-left: 3px;
+	padding-bottom: 76px;
+	padding-top: 39px;
+
+	&__header {
+		font-size: 24px;
+		letter-spacing: -0.4px;
+		font-weight: 400;
+		text-transform: uppercase;
+		color: #635f57;
+		margin: 0;
+		padding: 0;
+		margin-bottom: 18px;
+		position: relative;
+		z-index: 1;
+
+		&:not(:first-child) {
+			margin-top: 59px;
+		}
+
+	}
+
+	&__featuredProducts,
+	&__staffPick,
+	&__newProducts {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	&__featuredProducts {
+		align-content: space-between;
+		height: 1008px;
+	}
+
+	&__item {
+		display: block;
+		box-sizing: border-box;
+		width: 233px;
+		height: 319px;
+		border: 8px solid #fff;
+		box-shadow: 0px 0px 3px 3px #eaeaea;
+		font-size: 14px;
+		line-height: 22px;
+		font-weight: 400;
+		color: #464148;
+		position: relative;
+	}
+
+}
+
+@import "catalog-item";
+
+.button_icon_basket {
+	display: block;
+	margin-top: 10px;
+	margin-right: 5px;
+}
+
+.button__basket-icon {}

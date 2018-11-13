@@ -1,0 +1,41 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: "Open Sans", Arial, sans-serif;
+    background-color: #fff;
+}
+
+* {
+    transition: all 0.2s ease-in-out;
+}
+
+.header {
+    width: 100vw;
+    min-width: 1024px;
+    margin: 0 auto;
+}
+
+.main {
+    width: 1024px;
+    margin: 0 auto;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer {
+    max-width: 100vw;
+    min-width: 1024px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.rotate180deg {
+    transform: rotate(180deg);
+}
+
+.light-blue {
+    color: #9ae2f4;
+}
