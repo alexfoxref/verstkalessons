@@ -1,0 +1,41 @@
+@import "blocks/global_styles/global";
+
+@import "blocks/global_styles/buttons";
+
+@import "blocks/global_styles/links";
+
+@import "blocks/global_styles/menu";
+
+
+
+@import "blocks/header/header-settings/header-settings";
+
+@import "blocks/header/header-main/header-main";
+
+@import "blocks/header/header-slider/header-slider";
+
+
+
+@import "blocks/main/main-catalog/main-catalog";
+
+@import "blocks/main/main-sidebar/main-sidebar";
+
+
+
+@import "blocks/footer/footer-delivery/footer-delivery";
+
+@import "blocks/footer/footer-reference/footer-reference";
+
+@import "blocks/footer/footer-copyright/footer-copyright";
+
+
+
+@import "blocks/global_styles/animation";
+
+// * {
+//     outline: 1px solid red;
+// }
+
+.hidden {
+    display: none;
+}

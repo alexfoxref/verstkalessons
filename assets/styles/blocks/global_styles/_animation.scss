@@ -1,0 +1,29 @@
+@keyframes sliderAnimation {
+    0% {
+        transform: translate(0%, 0px);
+    }
+    23% {
+        transform: translate(0%, 0px);
+    }
+    33% {
+        transform: translate(-100%, 0px);
+    }
+    56% {
+        transform: translate(-100%, 0px);
+    }
+    66% {
+        transform: translate(-200%, 0px);
+    }
+    89% {
+        transform: translate(-200%, 0px);
+    }
+    100% {
+        transform: translate(0%, 0px);
+    }
+}
+
+//Выдернул свойство
+
+.header-slider__list {
+    animation: sliderAnimation 15s ease-in-out infinite;
+}

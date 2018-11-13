@@ -1,0 +1,37 @@
+.main-sidebar__button {
+	border: none;
+	box-shadow: none;
+	padding: 0;
+	font-size: 14px;
+	line-height: 22px;
+	font-weight: 400;
+	color: #fff;
+	height: 44px;
+
+	&_color_blue {
+		background-color: #4cb1ca;
+	}
+
+	&_color_blue:hover {
+		box-shadow: 0px 0px 1px 1px #4cb1ca;
+		cursor: pointer;
+	}
+
+	&_color_green {
+		background-color: #7eb123;
+	}
+
+	&_color_green:hover {
+		box-shadow: 0px 0px 1px 1px #7eb123;
+		cursor: pointer;
+	}
+
+	&_size_big {
+		width: 132px;
+	}
+
+	&_size_small {
+		width: 112px;
+	}
+
+}

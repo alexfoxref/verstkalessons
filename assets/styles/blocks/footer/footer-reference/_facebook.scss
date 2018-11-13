@@ -1,0 +1,69 @@
+.facebook {
+
+	&__text {
+		font-size: 13px;
+		line-height: 20px;
+		font-weight: 300;
+		margin: 25px 0 6px 0;
+		padding: 0;
+
+	}
+
+	&__button {
+		width: 47px;
+		height: 23px;
+		border-radius: 3px;
+		border: none;
+		display: block;
+		padding: 0;
+		margin: 0;
+
+		&:hover {
+			box-shadow: 0px 0px 1px 1px #fff;
+			cursor: pointer;
+		}
+
+	}
+
+	&__like-icon {
+		display: block;
+		margin: 0;
+	}
+
+	&__photos {
+		width: 233px;
+		height: 125px;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		margin-top: 6px;
+
+		&::before,
+		&::after {
+			content: "";
+			width: 233px;
+			height: 1px;
+			background-color: #4cb1ca;
+		}
+
+		&::before {
+			margin-bottom: 7px;
+		}
+
+		&::after {}
+
+	}
+
+	&__photoplace {
+		width: 49px;
+		height: 49px;
+		margin-bottom: 9px;
+		margin-right: 2px;
+	}
+
+	&__photo-icon {
+		display: block;
+	}
+
+}
