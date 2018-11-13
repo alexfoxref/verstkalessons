@@ -1,0 +1,29 @@
+.ad {
+
+    &__header,
+    &__subheader {
+        display: block;
+        box-sizing: border-box;
+        line-height: 47px;
+        height: 47px;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding-left: 14px;
+        margin: 0;
+    }
+
+    &__header {
+        width: 285px;
+        font-size: 30px;
+        font-weight: 300;
+        background-color: rgba(0, 0, 0, 0.5);
+        margin-bottom: 3px;
+    }
+
+    &__subheader {
+        width: 329px;
+        font-size: 28px;
+        font-weight: 700;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+}

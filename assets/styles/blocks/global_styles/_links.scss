@@ -1,0 +1,83 @@
+.link {
+	color: inherit;
+	text-decoration: none;
+
+	&:active,
+	&:focus,
+	&:visited {
+		outline: none;
+		text-decoration: none;
+	}
+
+	&:visited {
+		color: inherit;
+	}
+
+	&:hover {
+		cursor: pointer;
+	}
+
+
+	.header-main &:hover {
+		text-shadow: 0px 0px 1px #656565;
+	}
+
+	&_menu {
+
+		.header-settings__menu &:hover {
+			text-shadow: 0px 0px 1px #fff;
+		}
+
+		.footer-copyright__menu &:hover {
+			text-shadow: 0px 0px 1px #5599aa;
+			cursor: pointer;
+		}
+
+	}
+
+	&_cart {}
+
+	&_delivery {
+		margin-left: 20px;
+		font-size: 21px;
+		font-weight: 400;
+		text-transform: uppercase;
+		color: #fff;
+	}
+
+	&-facebook_plugin {
+		display: block;
+		font-size: 13px;
+		line-height: 20px;
+		font-weight: 400;
+		margin-top: 9px;
+	}
+
+	&_contactUs-telephone {
+		display: block;
+		margin: 0;
+		padding: 0;
+		font-size: 13px;
+		line-height: 24px;
+		font-weight: 400;
+		padding-left: 7px;
+	}
+
+	&_contactUs-email {
+		display: block;
+		margin: 0;
+		padding: 0;
+		font-size: 13px;
+		line-height: 24px;
+		font-weight: 400;
+		padding-left: 7px
+	}
+
+	&_contactUs-email:hover,
+	&_contactUs-telephone:hover,
+	&-facebook_plugin:hover,
+	&_delivery:hover {
+		text-shadow: 0px 0px 1px #fff;
+	}
+
+}

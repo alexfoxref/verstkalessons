@@ -1,0 +1,61 @@
+.sidebar-subscribe {
+
+	&__header {
+		text-align: center;
+		font-size: 24px;
+		letter-spacing: -0.4px;
+		text-transform: uppercase;
+		font-weight: 400;
+		color: #635f57;
+		margin: 0;
+		margin-top: 17px;
+	}
+
+	&__text {
+		color: #696969;
+		position: relative;
+		text-align: center;
+		margin: 0;
+		margin-top: 17px;
+		font-size: 14px;
+		line-height: 20px;
+		width: 190px;
+
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0px;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			margin: auto auto 0 auto;
+			bottom: -12px;
+			height: 1px;
+			width: 85px;
+			background-color: #ededed;
+		}
+
+	}
+
+	&__form {
+		margin-top: 27px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: relative;
+		z-index: 1;
+	}
+
+	&__input {
+		margin: 0;
+		padding: 0;
+		width: 187px;
+		height: 29px;
+		border-color: #ededed;
+	}
+
+	&__button {
+		margin-top: 18px;
+	}
+
+}

@@ -1,0 +1,44 @@
+.header-main {
+    height: 107px;
+    width: 1024px;
+    margin: 0 auto;
+    background-color: #fff;
+    color: #656565;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__wrapper {
+        width: 570px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        display: block;
+        font-size: 36px;
+        letter-spacing: -1.5px;
+        margin: 0;
+    }
+
+    &__menu {
+        display: block;
+        font-size: 14px;
+        letter-spacing: -0.4px;
+    }
+
+    &__cartbox {
+        width: 334px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+}
+
+@import "cartbox";
+
+// Сравнивать со старой версией - были переносы стилей наверх
