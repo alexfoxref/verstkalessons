@@ -1,0 +1,53 @@
+.catalog-item {
+
+	&__image {
+		width: 100%;
+		height: 229px;
+		margin: 0 auto;
+		overflow: hidden;
+		display: flex;
+		justify-content: center;
+	}
+
+	&__icon {
+		display: block;
+	}
+
+	&__information {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__text-wrapper {
+		display: block;
+		position: relative;
+		z-index: 1;
+		max-width: 160px;
+		padding-top: 5px;
+		padding-left: 5px;
+	}
+
+	&__information-text {
+		display: block;
+		margin: 0;
+		margin-top: 5px;
+	}
+
+	&__information-firstPrise {
+		display: inline-block;
+		margin: 0;
+		text-decoration: line-through;
+	}
+
+	&__information-price {
+		display: inline-block;
+		margin: 0;
+		font-size: 18px;
+		line-height: 22px;
+		font-weight: 400;
+		color: #7db122;
+	}
+
+}
+
+@import "catalog-item__lable";

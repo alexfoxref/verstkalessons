@@ -1,0 +1,23 @@
+.scroll-wrapper {
+	width: 53px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.button_icon_scroll {
+	background-color: #7db122;
+}
+
+.button_icon_scroll:hover {
+	box-shadow: 0px 0px 1px 1px #7db122;
+	cursor: pointer;
+}
+
+.button_icon_scroll-active {
+	background-color: #4cb1ca;
+}
+
+.button_icon_scroll-active:hover {
+	box-shadow: 0px 0px 1px 1px #4cb1ca;
+	cursor: pointer;
+}

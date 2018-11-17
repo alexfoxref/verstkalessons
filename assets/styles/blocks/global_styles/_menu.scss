@@ -1,0 +1,39 @@
+.menu {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.menu__item {
+	display: block;
+	position: relative;
+
+	.menu_type1 &:not(:first-child) {
+		margin-left: 29px;
+	}
+
+	.menu_type1 &:not(:last-child)::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: -14px;
+		margin: auto 0;
+		height: 11px;
+		width: 1px;
+	}
+
+	.menu_type2 &:not(:first-child) {
+		margin-left: 26px;
+	}
+
+	.header-settings__menu &:not(:last-child)::after {
+		background-color: #fff;
+	}
+
+	.footer-copyright__menu &:not(:last-child)::after {
+		background-color: #5599aa;
+	}
+
+}

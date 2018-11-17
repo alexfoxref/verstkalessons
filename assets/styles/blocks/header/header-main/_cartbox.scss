@@ -1,0 +1,57 @@
+.cartbox {
+
+    &__search {}
+
+    &__form {
+        display: flex;
+        align-items: center;
+    }
+
+    &__input {
+        display: block;
+        height: 29px;
+        width: 172px;
+        background-color: #fff;
+        border: 1px solid #c6c6c6;
+        border-radius: 0;
+        padding: 0;
+
+        &:focus {
+            outline-color: #656565;
+        }
+    }
+
+    &__buttons {
+        width: 74px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__link {
+        display: block;
+        font-size: 14px;
+        letter-spacing: -0.4px;
+    }
+
+}
+
+.button_icon {
+
+    &_tag,
+    &_cart {
+        position: relative;
+    }
+
+}
+
+//Вроде бы стили ниже для кнопок не работают
+
+.button__tag-icon,
+.button__cart-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -20px * 0.5;
+    margin-top: -17px * 0.5;
+    fill: #fff;
+}

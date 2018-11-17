@@ -1,0 +1,53 @@
+@import "main-sidebar__button";
+
+.sidebar-banner {
+
+	&__images {
+		height: 445px;
+		border-top: 4px solid #4cb1ca;
+		width: 100%;
+		box-sizing: border-box;
+		padding: 13px;
+		padding-top: 26px;
+		box-shadow: 0px 0px 3px 3px #eaeaea;
+		position: relative;
+	}
+
+	&__frame {
+		overflow: hidden;
+		position: relative;
+		width: 207px;
+		height: 402px;
+	}
+
+	&__background {
+		position: absolute;
+		left: -77px;
+		opacity: 0;
+		transition: all 1s linear;
+
+
+		&-active {
+			opacity: 1;
+		}
+	}
+
+	&__button {
+		position: absolute;
+		top: 369px;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+	}
+
+	&__scroll {
+		height: 40px;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+}
+
+@import "scroll-wrapper";
