@@ -531,7 +531,11 @@ body {
 
 .sidebar-banner__background {
   position: absolute;
-  left: -77px; }
+  left: -77px;
+  opacity: 0;
+  transition: all 1s linear; }
+  .sidebar-banner__background-active {
+    opacity: 1; }
 
 .sidebar-banner__button {
   position: absolute;
@@ -552,18 +556,18 @@ body {
   display: flex;
   justify-content: space-between; }
 
-.button_icon_scroll:nth-child(1) {
-  background-color: #4cb1ca; }
-
-.button_icon_scroll:nth-child(1):hover {
-  box-shadow: 0px 0px 1px 1px #4cb1ca;
-  cursor: pointer; }
-
-.button_icon_scroll:not(:nth-child(1)) {
+.button_icon_scroll {
   background-color: #7db122; }
 
-.button_icon_scroll:not(:nth-child(1)):hover {
+.button_icon_scroll:hover {
   box-shadow: 0px 0px 1px 1px #7db122;
+  cursor: pointer; }
+
+.button_icon_scroll-active {
+  background-color: #4cb1ca; }
+
+.button_icon_scroll-active:hover {
+  box-shadow: 0px 0px 1px 1px #4cb1ca;
   cursor: pointer; }
 
 .sidebar-subscribe__header {

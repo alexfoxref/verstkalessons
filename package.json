@@ -16,10 +16,10 @@
     "url": "https://github.com/alexfoxref/verstkalessons/issues"
   },
   "homepage": "https://github.com/alexfoxref/verstkalessons#readme",
-  "dependencies": {
-    "gulp": "^4.0.0",
-    "gulp-sass": "^4.0.2",
-    "node": "^11.1.0",
-    "node-sass": "^4.10.0"
+  "devDependencies": {
+    "gulp": "4.0.0",
+    "gulp-sass": "4.0.2",
+    "node": "11.1.0",
+    "node-sass": "4.10.0"
   }
 }

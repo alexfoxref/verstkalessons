@@ -23,6 +23,13 @@
 	&__background {
 		position: absolute;
 		left: -77px;
+		opacity: 0;
+		transition: all 1s linear;
+
+
+		&-active {
+			opacity: 1;
+		}
 	}
 
 	&__button {
@@ -32,8 +39,6 @@
 		right: 0;
 		margin: 0 auto;
 	}
-
-
 
 	&__scroll {
 		height: 40px;
